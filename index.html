@@ -11,9 +11,8 @@
   
  	 <script LANGUAGE=javascript1.2>		 
 		 function compute(form) {
-			 var A = form.A.value;
-			 var B = form.B.value;
-			 form.stenosis.value = ((1-(A/B))*100)
+			 form.stenosis.value = ((1-(form.A.value/form.B.value))*100);
+		 }
 
 	 	function ClearForm(form) {
 	    		form.A.value = "";
