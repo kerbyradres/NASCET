@@ -9,19 +9,11 @@
 
 	<link href="css/bootstrap.css" rel="stylesheet">
   
- 	 <script LANGUAGE=javascript1.2>
-   		function Fmt(x) { 
-      			var v
-      			if(x>=0) {v=''+(x+0.00005)} 
-			else {v=''+(x-0.00005)}
-      			return v.substring(0,v.indexOf('.')+3)
-   		}
-		 
+ 	 <script LANGUAGE=javascript1.2>		 
 		 function compute(form) {
-			var stenosis = ((1-(A/B))*100);
-             			form.A.value = Fmt(A);
-	        	 	form.B.value = Fmt(B)};
-  				}
+			 var A = form.A.value;
+			 var B = form.B.value;
+			 form.stenosis.value = ((1-(A/B))*100)
 
 	 	function ClearForm(form) {
 	    		form.A.value = "";
