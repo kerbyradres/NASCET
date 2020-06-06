@@ -12,21 +12,18 @@
  	 <script LANGUAGE=javascript1.2>		 
 		 function compute(form) {
 			 form.stenosis.value = ((1-(form.A.value/form.B.value))*100);
-		 }
+		}
 
 	 	function ClearForm(form) {
 	    		form.A.value = "";
 		  	form.B.value = "";
 		  	form.stenosis.value = "";
-	 		}
+	 	}
 	</script>
 	
 </HEAD>
 
 <BODY>
-	<div class="text-center"><h1><b>NASCET Calculator</b></h1>
-	</div>
-	
 	<div class="card bg-dark text-white" style="width:500px">
 		<div class="card-header" align="center">
 			<h5><b><u>NASCET Calculator</u></b></h5><img src="NASCET (1).jpg" alt="NASCET" width="200">
@@ -36,12 +33,12 @@
 			<form>
 				<table align="center">
 					<tr>
-						<td width="200px"><p><b>A:</b></td> 
-						<td width="200px"><input name="A"><br></td> 
+						<td width="100px"><p><b>A:</b></td> 
+						<td width="100px"><input name="A"><br></td> 
 					</tr>
 					<tr>
-						<td width="200px"><b>B:</b></td>
-						<td width="200px"><input name="B"><br></td>
+						<td width="100px"><b>B:</b></td>
+						<td width="100px"><input name="B"><br></td>
 					</tr>
 				</table>
 				<br>
@@ -54,8 +51,8 @@
 		<div class="card-footer">
 				<table align="center">
 					<tr>
-						<td width="200px"><p><b>% Stenosis:</p></b></td> 
-						<td width="200px"><input name="stenosis">%</td> 
+						<td width="100px"><p><b>% Stenosis:</p></b></td> 
+						<td width="100px"><input name="stenosis">%</td> 
 					</tr>
 				</table> 
 			</form>
