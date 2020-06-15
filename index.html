@@ -10,8 +10,15 @@
 	<link href="css/custom-css-bootstrap-magic-2020-06-09.css" rel="stylesheet">
   
  	 <script LANGUAGE=javascript1.2>		 
-		 function compute(form) {
-			 form.stenosis.value = ((1-(form.A.value/form.B.value))*100);
+		function Fmt(x) { 
+      			var v
+      			if(x>=0) {v=''+(x+0.00005)} 
+			else {v=''+(x-0.00005)}
+      			return v.substring(0,v.indexOf('.')+2)
+   		}
+		 
+		function compute(form) {
+			 form.stenosis.value = fmt(((1-(form.A.value/form.B.value))*100));
 		}
 
 	 	function ClearForm(form) {
