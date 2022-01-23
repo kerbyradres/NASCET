@@ -10,6 +10,16 @@
         <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
+	<script LANGUAGE=javascript1.2>		 
+		function compute(form) {
+			 form.stenosis.value = ((1-(form.A.value/form.B.value))*100);
+		}
+	 	function ClearForm(form) {
+	    		form.A.value = "";
+		  	form.B.value = "";
+		  	form.stenosis.value = "";
+		}
+	</script>
     </head>
     <body>
         <!-- Responsive navbar-->
